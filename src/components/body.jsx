@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import './PostNumber.css';
+import './body.css'
 function PostNumber() {
   const [number, setNumber] = useState("");
 
@@ -23,13 +24,15 @@ function PostNumber() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Enter a number:
-        <input type="number" value={number} onChange={handleChange} />
-      </label>
-      <button type="submit">Submit</button>
-    </form>
+    <div className="PostNumber">
+      <form onSubmit={handleSubmit}>
+        <label>
+          Enter a number:
+          <input type="number" value={number} onChange={handleChange} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }
 
