@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './PostNumber.css';
+
 import './body.css'
 function PostNumber() {
   const [number, setNumber] = useState("");
